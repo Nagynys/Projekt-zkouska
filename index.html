@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pojištění</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>PojištěníApp</h1>
+
+      <ul>
+        <li><a href="#">Pojištěnci</a></li>
+        <li><a href="#">Pojištění</a></li>
+        <li><a href="#">O aplikaci...</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Přihlášení</a></li>
+        <li><a href="#">Registrace</a></li>
+      </ul>
+    </nav>  
+  </header>
+
+  <section>
+    <h2>Pojištěnci</h2>
+
+    <thead>
+      <table>
+        <tr>
+          <th>Jméno a příjmení</th>
+          <th>Telefon</th>
+          <th>Věk</th>
+
+          <div id="seznam"></div>
+        </tr>
+      </table>
+    </thead>
+
+    <h2>Nový pojištěnec</h2>
+    <img src="./avatar.jpg" alt="Obrázek pojištěnce">
+
+    <form>
+      <input type="text" id="jmeno" placeholder="Jméno">
+      <input type="text" id="prijmeni" placeholder="Příjmení">
+
+      <input type="number" min="0" id="vek" placeholder="Věk">
+      <input type="tel" id="telefon" placeholder="Telefon">
+
+      <div class="button">
+        <button type="submit" id="btn">Uložit</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
